@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.1" />
+	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="background-music">
+			<audio id="background-audio" loop>
+				<source src="img/kirill_richter.mp3" type="audio/mpeg">
+				Ваш браузер не поддерживает элемент `audio`.
+			</audio>
+		</div>
+
+		<div class="fixed-buttons">
+			<a href="#" class="link-main">SUBSCRIBE</a>
+			<div class="btn-music off"></div>
+		</div>
+
+		<nav class="menu">
+			<ul class="menu__list">
+				<li><a href="#MUSIC">MUSIC</a></li>
+				<li><a href="#TICKETS">TICKETS</a></li>
+				<li><a href="#BIOGRAPHY">BIOGRAPHY</a></li>
+				<li><a href="#CONTACTS">CONTACTS</a></li>
+			</ul>
+		</nav>
+
+		<div class="pages">
+
+			<div class="page" id="MUSIC">
+				<section class="hero main">
+					<div class="main__content">
+						<div class="main__about">
+							<h1 class="main__name">KIRILL RICHTER</h1>
+							<div class="main__logo">
+								<img src="img/logo.png" alt="alt">
+							</div>
+							<ul class="menu__links">
+								<li><a href="#">APPLE MUSIC</a></li>
+								<li><a href="#">SPOTIFY</a></li>
+								<li><a href="#">AMAZON MUSIC</a></li>
+							</ul>
+						</div>
+						<div class="main__schedule">
+							<div class="list-schedule">
+								<div class="item-schedule">
+									<div class="item-schedule__title"><strong>LONDON</strong>  17 OCT</div>
+									<div class="item-schedule__description">Queen Elizabeth Hall</div>
+								</div>
+								<div class="item-schedule">
+									<div class="item-schedule__title"><strong>MUNICH </strong> MUNICH</div>
+									<div class="item-schedule__description">Bergson Kunstkraftwerk</div>
+								</div>
+								<div class="item-schedule">
+									<div class="item-schedule__title"><strong>VIENNA</strong> VIENNA </div>
+									<div class="item-schedule__description">Lorely Saal</div>
+								</div>
+								<div class="item-schedule">
+									<div class="item-schedule__title"><strong>PARIS </strong> PARIS </div>
+									<div class="item-schedule__description">Théâtre Le Ranelagh</div>
+								</div>
+								<div class="item-schedule">
+									<div class="item-schedule__title"><strong>AMSTERDAM</strong> 15 NOV</div>
+									<div class="item-schedule__description">Dominicuskerk</div>
+								</div>
+								<div class="item-schedule">
+									<div class="item-schedule__title"><strong>LIMASSOL </strong> LIMASSOL </div>
+									<div class="item-schedule__description">Pattihio </div>
+								</div>
+								<div class="item-schedule">
+									<div class="item-schedule__title"><strong>DUBAI </strong> DUBAI </div>
+									<div class="item-schedule__description">Queen Elizabeth 2</div>
+								</div>
+							</div>
+							<div class="main__buy">
+								<a href="#" class="link-page">BUY TICKETS</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="premiere">
+					<h2 class="premiere__title">PREMIERE : WALTZ No.6 </h2>
+					<a href="#" class="link-page">WATCH FULL MUSIC VIDEO</a>
+					<div class="video-main">
+						<video width="100%" id="video-main" data-keepplaying height="auto" preload="auto" autoplay="autoplay" poster="img/poster.jpg" loop autoplay muted>
+							<source src="img/video.mp4" type="video/mp4"></source> 
+						</video>
+					</div>
+				</section>
+
+				<div class="gallery">
+					<div class="slider-gallery">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="page" id="TICKETS"> 
+				<section class="hero tickets">
+					<h2 class="hero__title">tickets</h2>
+					<div class="tickets__content">
+						<ul class="tickets__list">
+							<li><a href="#" class="tickets__item"><strong>LONDON</strong>  /  17 OCT  / <span>Queen Elizabeth Hall</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>MUNICH</strong>  /  7 NOV  / <span>Bergson Kunstkraftwerk</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>VIENNA</strong> /  9 NOV  / <span>Lorely Saal</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>PARIS</strong>  /  12 NOV  / <span>Théâtre Le Ranelagh</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>AMSTERDAM</strong>  /  15 NOV  / <span>Dominicuskerk</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>LIMASSOL</strong>  /  23 NOV  / <span>Pattihio Theatre</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>DUBAI</strong>  /  28, 29 NOV  / <span>Queen Elizabeth 2</span></a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+			<div class="page" id="BIOGRAPHY"> 
+				<section class="hero biography">
+					<h2 class="hero__title">BIOGRAPHY</h2>
+					<div class="biography__quote">
+						<p>"My music is a soundtrack to life, reflecting moments <br class="hidden-mob">that have, in one way or another, happened to me. <br><br>The stories I tell resonate in the lives of others, creating a sense that we all speak the same language."</p>
+					</div>
+					<div class="biography__wrap">
+						<div class="biography__column">
+							<p><span>Kirill Richter</span>, Paris-based composer and pianist known for his distinctive style of expressive minimalism: a unique blend of minimalist techniques with bold, energetic, and unforgettable melodies. </p>
+							<br>
+							<p>His evocative and cinematic compositions have earned him recognition in the contemporary classical scene. His work spans opera, ballet, cinema, with collaborations across disciplines, from couture houses to Olympic champions.</p>
+						</div>
+						<div class="biography__column">
+							<p>With an academic background  in physics and fashion design,  his compositions blend structural precision with deep emotional resonance, bridging the worlds of science, design, and music.  </p>
+							<br>
+							<p>His music has accompanied performances by Olympic figure skating champions, bringing his evocative sound to the world of elite athletics. In 2018, his piece <span>‘Where Angels Fear to Tread’</span> became the official theme for the FIFA World Cup, reaching millions of viewers globally.</p>
+						</div>
+						<div class="biography__column">
+							<p>His works also include operas, as Tamerlano with famous opera director Stefano Poda and ballets like Seven Ages with choreography by <span>Marco Goecke</span>.</p>
+							<br>
+							<p>Richter has performed at such venues as <span>Berliner Philharmonie, Royal Albert Hall, Elbphilharmonie</span>  captivating audiences with his bold and emotive approach. </p>
+							<br>
+							<p>In autumn 2025, his new album <span>Towards the Beloved City</span> will be released on Warner Classics, bringing his music to an even wider audience in the world of contemporary classical music.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="page" id="CONTACTS"> 
+				<section class="hero contacts">
+					<h2 class="hero__title">CONTACTS</h2>
+					<div class="contacts__content">
+						<div class="contacts__list">
+							<div><a href="#" class="link-page">APPLE MUSIC</a></div>
+							<div class="slash">/</div>
+							<div><a href="#" class="link-page">SPOTIFY</a></div>
+							<div class="slash">/</div>
+							<div><a href="#" class="link-page">YOUTUBE</a></div>
+						</div>
+						<div class="contacts__list">
+							<div><a href="#" class="link-page">INSTAGRAM</a></div>
+							<div class="slash">/</div>
+							<div><a href="#" class="link-page">FACEBOOK</a></div>
+							<div class="slash">/</div>
+							<div><a href="#" class="link-page">TIKTOK</a></div>
+						</div>
+						<div class="contacts__line">
+							<div class="contacts__info">For bookings, commissions, collaborations, <br>business or press inquiries, please contact: </div>
+							<div>
+								<a href="#" class="link-page">CONTACT</a>
+							</div>
+						</div>
+						<div class="contacts__line">
+							<div class="contacts__info">Be the first to know about concerts, <br>premieres, and new music</div>
+							<div>
+								<a href="#" class="link-page">SUBSCRIBE</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+		
+	</div>
+
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.1"></script>
+
+</body>
+</html>
