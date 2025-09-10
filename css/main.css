@@ -169,6 +169,7 @@ form {
 }
 .menu__links a {
 	color: #fff;
+	border-bottom: 0.03vw transparent solid;
 }
 .menu__links li::after {
 	content: "l";
@@ -203,9 +204,6 @@ form {
 	color: #fff;
 	font-family: "CocoGothicSC";
 }
-.link-page:hover {
-	border-color: transparent;
-}
 .main__buy {
 	padding-top: 1.4vw;
 	text-align: center;
@@ -230,10 +228,9 @@ form {
 .menu__list a {
 	color: #fff;
 	border-bottom: 0.03vw transparent solid;
+	text-shadow: 0 0 5px #000;
 }
-.menu__list a:hover {
-	border-color: #fff;
-}
+
 
 .fixed-buttons {
 	gap: 1.32vw;
@@ -251,9 +248,7 @@ form {
 	font-style: italic;
 	border-bottom: 0.03vw transparent solid;
 }
-.link-main:hover {
-	border-color: #fff;
-}
+
 .btn-music {
 	width: 1.18vw;
 	height: 1.74vw;
@@ -321,9 +316,6 @@ form {
 	font-family: "CocoGothicSC";
 	color: #fff;
 	border-bottom: 0.07vw #fff solid;
-}
-.tickets__item:hover {
-	border-color: transparent;
 }
 .tickets__item strong {
 	font-weight: 700;
@@ -426,9 +418,6 @@ form {
 }
 .contacts__list .link-page {
 	border-color: transparent;
-}
-.contacts__list .link-page:hover {
-	border-color: #fff;
 }
 .contacts__line {
 	margin-top: 3.47vw;

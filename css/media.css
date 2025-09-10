@@ -190,6 +190,9 @@
     .contacts__info {
         font-size: 15px;
     }
+    .contacts__info br {
+        display: none;
+    }
 
     .gallery {
         padding: 50px 15px;
@@ -240,5 +243,34 @@
     .item-video {
         width: 320px;
         display: block;
+    }
+    .menu__links a {
+        border-width: 1px;
+    }
+}
+
+@media (hover: hover) {
+    .menu__links a:hover,
+    .link-main:hover,
+    .contacts__list .link-page:hover,
+    .menu__list a:hover {
+        border-color: #fff;
+    }
+    .link-page:hover,
+    .tickets__item:hover {
+        border-color: transparent;
+    }
+}
+
+@media (hover: none) {
+    .menu__links a:active,
+    .link-main:active,
+    .contacts__list .link-page:active,
+    .menu__list a:active {
+        border-color: #fff;
+    }
+    .link-page:active,
+    .tickets__item:active {
+        border-color: transparent;
     }
 }
