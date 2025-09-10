@@ -177,14 +177,14 @@
         width: 360px;
     }
     .contacts__list {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     .contacts__list,
     .contacts__content .link-page {
         font-size: 15px;
     }
     .contacts__line {
-        margin-top: 20px;
+        margin-top: 32px;
         gap: 15px;
     }
     .contacts__info {
