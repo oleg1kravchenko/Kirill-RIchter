@@ -1,4 +1,3 @@
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
     body {
@@ -10,7 +9,7 @@
         min-height: initial;
     }
     .main {
-        min-height: 520px;
+        min-height: 600px;
         padding-top: 90px;
         background-position: 50% 0%;
         justify-content: flex-start;
@@ -270,6 +269,61 @@
     .menu__links a {
         border-width: 1px;
     }
+
+    .modal-wrap {
+        width: 400px;
+        padding: 35px 20px;
+    }
+    .fancybox-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .title-modal {
+        font-size: 20px;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+    }
+    .item-form {
+        margin-bottom: 15px;
+    }
+    .item-form input,
+    .item-form textarea {
+        height: 45px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .checkbox {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .checkbox label {
+        gap: 10px;
+    }
+    .checkbox label input {
+        width: 19px;
+        height: 19px;
+    }
+    .checkbox label input::before {
+        background-size: 15px auto;
+    }
+    .btn-main {
+        height: 45px;
+        padding: 0 15px;
+        letter-spacing: 0.2px;
+        font-size: 16px;
+        border-width: 1px;
+    }
+    .modal-wrap .btn-main {
+        margin-top: 20px;
+    }
+    .fancybox-slide--html .fancybox-close-small {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+    }
+    .descr-thanks {
+        font-size: 15px;
+    }
 }
 
 @media (hover: hover) {
@@ -283,6 +337,10 @@
     .tickets__item:hover {
         border-color: transparent;
     }
+    .btn-main:hover {
+        background: transparent;
+        color: #fff;
+    }
 }
 
 @media (hover: none) {
@@ -295,5 +353,9 @@
     .link-page:active,
     .tickets__item:active {
         border-color: transparent;
+    }
+    .btn-main:active {
+        background: transparent;
+        color: #fff;
     }
 }

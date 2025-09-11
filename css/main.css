@@ -14,19 +14,19 @@ html {
 }
 
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #c2c2c2;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #c2c2c2;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #c2c2c2;
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
+	color: #c2c2c2;
 	opacity: 1;
 }
 
@@ -571,4 +571,113 @@ form {
 	height: 0;
 	width: 0;
 	z-index: -100;
+}
+
+.modal-block {
+	display: none;
+	padding: 0;
+	background: transparent;
+}
+.modal-wrap {
+    width: 35vw;
+    padding: 4vw;
+	max-width: 100%;
+	background: #181818;
+}
+.title-modal {
+	font-size: 2vw;
+	margin-bottom: 2vw;
+    letter-spacing: 0.28vw;
+	text-align: center;
+	text-transform: uppercase;
+    font-style: italic;
+}
+.item-form {
+	margin-bottom: 2vw;
+}
+.item-form input,
+.item-form textarea {
+    height: 4vw;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    font-size: 1.2vw;
+	border: none;
+	background: transparent;
+	border-bottom: 1px #fff solid;
+	transition: all 0.3s;
+	font-family: "AvenirNext";
+}
+.checkbox {
+	font-size: 1vw;
+	margin-top: 1vw;
+	line-height: normal;
+}
+.checkbox label {
+	gap: 0.8vw;
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	cursor: pointer;
+}
+.checkbox label input {
+	width: 1.2vw;
+	height: 1.2vw;
+	border: none;
+	margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	     appearance: none;
+	border: 1px solid #fff;
+	position: relative;
+	flex: none;
+}
+.checkbox label input::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/check.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.5vw auto;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.checkbox input:checked:before {
+	opacity: 1;
+}
+.btn-main {
+	height: 3.5vw;
+	padding: 0 0.2vw;
+	width: 100%;
+	letter-spacing: 0.2vw;
+	font-size: 1.4vw;
+	text-transform: uppercase;
+	font-family: "CocoGothicSC";
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: #fff;
+	border: 2px solid #fff;
+	transition: all 0.3s;
+}
+.modal-wrap .btn-main {
+	margin-top: 2vw;
+}
+.fancybox-slide--html .fancybox-close-small {
+    width: 4vw;
+    height: 4vw;
+    padding: 0.8vw;
+	opacity: 1;
+}
+.descr-thanks {
+    font-size: 1.4vw;
+    text-align: center;
 }

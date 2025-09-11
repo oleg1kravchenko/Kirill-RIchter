@@ -14,8 +14,8 @@
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.1" />
-	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+	<link rel="stylesheet" href="css/main.css?ver=1.2" />
+	<link rel="stylesheet" href="css/media.css?ver=1.2" />
 </head>
 <body>
 
@@ -29,7 +29,7 @@
 		</div>
 
 		<div class="fixed-buttons">
-			<a href="#" class="link-main">SUBSCRIBE</a>
+			<a href="#modal-subscribe" class="link-main fancybox">SUBSCRIBE</a>
 			<div class="btn-music off"></div>
 		</div>
 
@@ -179,13 +179,13 @@
 						<div class="contacts__line">
 							<div class="contacts__info">For bookings, commissions, collaborations, <br>business or press inquiries, please contact: </div>
 							<div>
-								<a href="#" class="link-page">CONTACT</a>
+								<a href="#modal-contact" class="link-page fancybox">CONTACT</a>
 							</div>
 						</div>
 						<div class="contacts__line">
 							<div class="contacts__info">Be the first to know about concerts, <br>premieres, and new music</div>
 							<div>
-								<a href="#" class="link-page">SUBSCRIBE</a>
+								<a href="#modal-subscribe" class="link-page fancybox">SUBSCRIBE</a>
 							</div>
 						</div>
 					</div>
@@ -196,11 +196,60 @@
 		
 	</div>
 
+	<div id="modal-subscribe" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-modal">subscribe</div>
+			<form>
+				<div class="item-form">
+					<input type="email" placeholder="Email" inputmode="email" required>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required checked />
+						<span>I agree that RICHTER sends me its newsletter by email.</span>
+					</label>
+				</div>
+				<button class="btn-main">subscribe</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-contact" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-modal">CONTACT</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Name" required>
+				</div>
+				<div class="item-form">
+					<input type="email" placeholder="Email" inputmode="email" required>
+				</div>
+				<div class="item-form">
+					<input type="text" placeholder="Comment" required>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required checked />
+						<span>I agree that RICHTER sends me its newsletter by email.</span>
+					</label>
+				</div>
+				<button class="btn-main">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="modal-thanks" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-modal">thanks</div>
+			<div class="descr-thanks">The form has been successfully submitted.</div>
+		</div>
+	</div>
+
 
 	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
 	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
-	<script src="js/common.js?ver=1.1"></script>
+	<script src="js/common.js?ver=1.2"></script>
 
 </body>
 </html>
