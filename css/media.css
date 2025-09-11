@@ -304,7 +304,7 @@
         height: 19px;
     }
     .checkbox label input::before {
-        background-size: 15px auto;
+        background-size: 10px auto;
     }
     .btn-main {
         height: 45px;
