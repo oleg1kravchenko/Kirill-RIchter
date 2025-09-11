@@ -292,9 +292,16 @@
         width: 100%;
         font-size: 16px;
     }
+    .agree-form,
     .checkbox {
         font-size: 14px;
         margin-top: 20px;
+    }
+    .agree-form {
+        margin-top: 12px;
+    }
+    .agree-form br {
+        display: none;
     }
     .checkbox label {
         gap: 10px;

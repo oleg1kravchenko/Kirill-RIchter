@@ -608,6 +608,7 @@ form {
 	transition: all 0.3s;
 	font-family: "AvenirNext";
 }
+.agree-form,
 .checkbox {
 	font-size: 1vw;
 	margin-top: 1vw;
