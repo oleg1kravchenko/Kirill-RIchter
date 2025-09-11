@@ -14,9 +14,27 @@
     }
     .main {
         min-height: 520px;
+        padding-top: 90px;
+        background-position: 50% 0%;
+        justify-content: flex-start;
+        background-size: 1245px auto;
+    }
+    .main::after {
+        position: absolute;
+        display: block;
+        content: " ";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        z-index: -1;
+        background-image: linear-gradient(to bottom, rgba(30, 30, 30, 0), rgba(30, 30, 30, 1));
     }
     .main__content {
-        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-bottom: 100px;
     }
     .main__name {
         font-size: 17px;
@@ -57,7 +75,7 @@
         break-inside: avoid;
     }
     .main__about {
-        margin-bottom: 40px;
+        margin-bottom: 130px;
     }
     .link-page {
         border-bottom: 1px #fff solid;
