@@ -34,10 +34,12 @@
         display: flex;
         flex-direction: column;
         flex: 1;
+        padding: 0 15px;
         padding-bottom: 100px;
     }
     .main__schedule {
-        margin: auto;
+        margin: auto 0;
+        width: 100%;
     }
     .main__name {
         font-size: 17px;
@@ -47,6 +49,7 @@
     .main__logo img {
         width: 320px;
         margin: 0 auto;
+        margin-bottom: -10px;
     }
     .menu__links {
         font-size: 13px;
@@ -79,15 +82,13 @@
     }
     .main__about {
         margin-bottom: 130px;
+        width: 100%;
     }
     .link-page {
         border-bottom: 1px #fff solid;
     }
     .main__buy {
         padding-top: 20px;
-    }
-    .main__content {
-        display: block;
     }
 
     .menu {
