@@ -233,17 +233,21 @@
         border-radius: 16px;
     }
     .item-video__title {
-        font-size: 20px;
-        margin-bottom: 15px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     .item-video__duration {
         padding: 4px 6px;
         bottom: 10px;
+        font-size: 13px;
         right: 10px;
         border-radius: 7px;
     }
     .item-video__views::after {
         margin: 0 7px;
+    }
+    .item-video__info {
+        font-size: 14px;
     }
     .slick-arrow {
         width: 50px;
@@ -260,7 +264,7 @@
         width: 12px;
     }
     .item-video {
-        width: 320px;
+        width: 299px;
         display: block;
     }
     .menu__links a {
