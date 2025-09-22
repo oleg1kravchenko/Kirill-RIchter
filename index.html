@@ -13,9 +13,9 @@
 	<meta name="format-detection" content="telephone=no" />
 	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.2" />
-	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+	<link rel="stylesheet" href="css/fonts.css?ver=1.3" />
+	<link rel="stylesheet" href="css/main.css?ver=1.3" />
+	<link rel="stylesheet" href="css/media.css?ver=1.3" />
 </head>
 <body>
 
@@ -23,7 +23,7 @@
 
 		<div class="background-music">
 			<audio id="background-audio" loop>
-				<source src="img/kirill_richter.mp3" type="audio/mpeg">
+				<source src="img/Music_Kirill_Richter.mp3" type="audio/mpeg">
 				Ваш браузер не поддерживает элемент `audio`.
 			</audio>
 		</div>
@@ -65,27 +65,31 @@
 									<div class="item-schedule__description">Queen Elizabeth Hall</div>
 								</div>
 								<div class="item-schedule">
-									<div class="item-schedule__title"><strong>MUNICH </strong> MUNICH</div>
+									<div class="item-schedule__title"><strong>MUNICH </strong> 7 NOV</div>
 									<div class="item-schedule__description">Bergson Kunstkraftwerk</div>
 								</div>
 								<div class="item-schedule">
-									<div class="item-schedule__title"><strong>VIENNA</strong> VIENNA </div>
+									<div class="item-schedule__title"><strong>VIENNA</strong> 9 NOV  </div>
 									<div class="item-schedule__description">Lorely Saal</div>
 								</div>
 								<div class="item-schedule">
-									<div class="item-schedule__title"><strong>PARIS </strong> PARIS </div>
+									<div class="item-schedule__title"><strong>PARIS </strong> 12 NOV </div>
 									<div class="item-schedule__description">Théâtre Le Ranelagh</div>
 								</div>
 								<div class="item-schedule">
-									<div class="item-schedule__title"><strong>AMSTERDAM</strong> 15 NOV</div>
-									<div class="item-schedule__description">Dominicuskerk</div>
+									<div class="item-schedule__title"><strong>ZURICH  </strong> 17 NOV</div>
+									<div class="item-schedule__description">Musikschule Konservatorium</div>
 								</div>
 								<div class="item-schedule">
-									<div class="item-schedule__title"><strong>LIMASSOL </strong> LIMASSOL </div>
-									<div class="item-schedule__description">Pattihio </div>
+									<div class="item-schedule__title"><strong>AMSTERDAM</strong> 19 NOV</div>
+									<div class="item-schedule__description">De Duif</div>
 								</div>
 								<div class="item-schedule">
-									<div class="item-schedule__title"><strong>DUBAI </strong> DUBAI </div>
+									<div class="item-schedule__title"><strong>LIMASSOL </strong> 23 NOV</div>
+									<div class="item-schedule__description">Pattihio Theatre </div>
+								</div>
+								<div class="item-schedule">
+									<div class="item-schedule__title"><strong>DUBAI </strong>28, 29 NOV </div>
 									<div class="item-schedule__description">Queen Elizabeth 2</div>
 								</div>
 							</div>
@@ -97,11 +101,23 @@
 				</section>
 
 				<section class="premiere">
-					<h2 class="premiere__title">PREMIERE : WALTZ No.6 </h2>
+					<h2 class="premiere__title"><span>SEPTEMBER 26</span>PREMIERE : WALTZ No.6 </h2>
 					<a href="#" class="link-page">WATCH FULL MUSIC VIDEO</a>
 					<div class="video-main">
-						<video width="100%" id="video-main" data-keepplaying height="auto" preload="auto" autoplay="autoplay" poster="img/poster.jpg" loop autoplay muted>
-							<source src="img/video.mp4" type="video/mp4"></source> 
+						<video 
+							id="video-main"
+							playsinline
+							webkit-playsinline
+							autoplay
+							muted
+							loop
+							preload="auto"
+							poster="img/poster.jpg"
+							width="100%"
+							height="auto"
+							>
+								<source src="img/Waltz_6_mobile.mp4" type="video/mp4" media="(max-width: 991px)">
+								<source src="img/Waltz_6_desktop.mp4" type="video/mp4" media="(min-width: 992px)"> 
 						</video>
 					</div>
 				</section>
@@ -118,14 +134,32 @@
 					<h2 class="hero__title">tickets</h2>
 					<div class="tickets__content">
 						<ul class="tickets__list">
-							<li><a href="#" class="tickets__item"><strong>LONDON</strong>  /  17 OCT  / <span>Queen Elizabeth Hall</span></a></li>
-							<li><a href="#" class="tickets__item"><strong>MUNICH</strong>  /  7 NOV  / <span>Bergson Kunstkraftwerk</span></a></li>
-							<li><a href="#" class="tickets__item"><strong>VIENNA</strong> /  9 NOV  / <span>Lorely Saal</span></a></li>
-							<li><a href="#" class="tickets__item"><strong>PARIS</strong>  /  12 NOV  / <span>Théâtre Le Ranelagh</span></a></li>
-							<li><a href="#" class="tickets__item"><strong>AMSTERDAM</strong>  /  15 NOV  / <span>Dominicuskerk</span></a></li>
-							<li><a href="#" class="tickets__item"><strong>LIMASSOL</strong>  /  23 NOV  / <span>Pattihio Theatre</span></a></li>
-							<li><a href="#" class="tickets__item"><strong>DUBAI</strong>  /  28, 29 NOV  / <span>Queen Elizabeth 2</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>LONDON</strong>  <span class="tickets__date">17 OCT</span> <span>Queen Elizabeth Hall</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>MUNICH</strong>  <span class="tickets__date"> 7 NOV</span> <span>Bergson Kunstkraftwerk</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>VIENNA</strong> <span class="tickets__date">9 NOV</span> <span>Lorely Saal</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>PARIS</strong>  <span class="tickets__date"></span>12 NOV</span> <span>Théâtre Le Ranelagh</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>ZURICH </strong>  <span class="tickets__date"> 17 NOV</span> <span>Musikschule Konservatorium</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>AMSTERDAM</strong> <span class="tickets__date">19 NOV</span> <span>Musikschule Konservatorium</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>LIMASSOL</strong>  <span class="tickets__date"> 23 NOV</span> <span>Pattihio Theatre</span></a></li>
+							<li><a href="#" class="tickets__item"><strong>DUBAI</strong>  <span class="tickets__date">28, 29 NOV</span> <span>Queen Elizabeth 2</span></a></li>
 						</ul>
+					</div>
+					<div class="video-main">
+						<video 
+							id="video-main"
+							playsinline
+							webkit-playsinline
+							autoplay
+							muted
+							loop
+							preload="auto"
+							poster="img/tickets.jpg"
+							width="100%"
+							height="auto"
+							>
+								<source src="img/Tickets_Mobile.mp4" type="video/mp4" media="(max-width: 991px)">
+								<source src="img/Tickets_Desktop.mp4" type="video/mp4" media="(min-width: 992px)">
+						</video>
 					</div>
 				</section>
 			</div>
@@ -250,7 +284,7 @@
 	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
 	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
-	<script src="js/common.js?ver=1.2"></script>
+	<script src="js/common.js?ver=1.3"></script>
 
 </body>
 </html>

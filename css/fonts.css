@@ -1,4 +1,23 @@
-/* ---------------- Adobe Clean ---------------- */
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/avenirnextcyr-thinitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/avenirnextcyr-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/avenirnextcyr-mediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
 @font-face {
   font-family: "AdobeClean";
   src: url("../fonts/AdobeClean-Regular.otf") format("opentype");
@@ -12,323 +31,11 @@
   font-style: italic;
 }
 @font-face {
-  font-family: "AdobeClean";
-  src: url("../fonts/AdobeClean-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AdobeClean";
-  src: url("../fonts/AdobeClean-LightIt.otf") format("opentype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AdobeClean";
-  src: url("../fonts/AdobeClean-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AdobeClean";
-  src: url("../fonts/AdobeClean-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AdobeClean";
-  src: url("../fonts/AdobeClean-BoldIt.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AdobeClean";
-  src: url("../fonts/AdobeClean-ExtraBold.otf") format("opentype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AdobeClean";
-  src: url("../fonts/AdobeClean-ExtraBoldIt.otf") format("opentype");
-  font-weight: 800;
-  font-style: italic;
-}
-/* SemiCondensed */
-@font-face {
-  font-family: "AdobeClean-SemiCn";
-  src: url("../fonts/AdobeClean-SemiCn.otf") format("opentype");
-}
-@font-face {
-  font-family: "AdobeClean-SemiCn";
-  src: url("../fonts/AdobeClean-SemiCnIt.otf") format("opentype");
-  font-style: italic;
-}
-@font-face {
-  font-family: "AdobeClean-BoldSemiCn";
-  src: url("../fonts/AdobeClean-BoldSemiCn.otf") format("opentype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "AdobeClean-BoldSemiCn";
-  src: url("../fonts/AdobeClean-BoldSemiCnIt.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-}
-
-/* ---------------- Coco Gothic Small Caps ---------------- */
-@font-face {
-  font-family: "CocoGothicSC";
-  src: url("../fonts/CocoGothicSmallCaps-Regular.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "CocoGothicSC";
-  src: url("../fonts/CocoGothicSmallCaps-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "CocoGothicSC";
-  src: url("../fonts/CocoGothicSmallCaps-Light.ttf") format("truetype");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "CocoGothicSC";
-  src: url("../fonts/CocoGothicSmallCaps-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "CocoGothicSC";
-  src: url("../fonts/CocoGothicSmallCaps-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-@font-face {
   font-family: "CocoGothicSC";
   src: url("../fonts/CocoGothicSmallCaps-BoldIta.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
-/* Остальные вариации */
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-Black.ttf") format("truetype"); font-weight: 900; }
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-ExtLt.ttf") format("truetype"); font-weight: 200; }
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-ExtLtIta.ttf") format("truetype"); font-weight: 200; font-style: italic; }
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-Fat.ttf") format("truetype"); font-weight: 800; }
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-FatItalic.ttf") format("truetype"); font-weight: 800; font-style: italic; }
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-Heavy.ttf") format("truetype"); font-weight: 900; }
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-HeavyItalic.ttf") format("truetype"); font-weight: 900; font-style: italic; }
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-UltraLight.ttf") format("truetype"); font-weight: 100; }
-@font-face { font-family: "CocoGothicSC"; src: url("../fonts/CocoGothicSmallCaps-UltraLightItalic.ttf") format("truetype"); font-weight: 100; font-style: italic; }
-
-/* ---------------- Codec Pro ---------------- */
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-News.ttf") format("truetype"); font-weight: 400; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-NewsItalic.ttf") format("truetype"); font-weight: 400; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-Light.ttf") format("truetype"); font-weight: 300; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-LightItalic.ttf") format("truetype"); font-weight: 300; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-Bold.ttf") format("truetype"); font-weight: 700; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-BoldItalic.ttf") format("truetype"); font-weight: 700; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-ExtraBold.ttf") format("truetype"); font-weight: 800; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-ExtraBoldItalic.ttf") format("truetype"); font-weight: 800; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-ExtraLightItalic.ttf") format("truetype"); font-weight: 200; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-Thin.ttf") format("truetype"); font-weight: 100; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-ThinItalic.ttf") format("truetype"); font-weight: 100; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-Heavy.ttf") format("truetype"); font-weight: 900; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-HeavyItalic.ttf") format("truetype"); font-weight: 900; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-Fat.ttf") format("truetype"); font-weight: 950; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-FatItalic.ttf") format("truetype"); font-weight: 950; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-Ultra.ttf") format("truetype"); font-weight: 950; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-UltraItalic.ttf") format("truetype"); font-weight: 950; font-style: italic; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-UltraBlack.ttf") format("truetype"); font-weight: 1000; }
-@font-face { font-family: "CodecPro"; src: url("../fonts/CodecPro-UltraBlackItalic.ttf") format("truetype"); font-weight: 1000; font-style: italic; }
-
-/* ---------------- Avenir Next & Lucida Grande ---------------- */
-/* .ttc файлы не всегда корректно подключаются через @font-face — обычно нужны otf/ttf */
-/* ---------------- Avenir Next ---------------- */
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-Regular-08.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-Italic-05.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-Medium-06.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-MediumItalic-07.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-DemiBold-03.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-DemiBoldItalic-04.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-Bold-01.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-BoldItalic-02.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-Heavy-09.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-HeavyItalic-10.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-UltraLight-11.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext-UltraLightItalic-12.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-
-/* ---------------- Avenir Next Condensed ---------------- */
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-Regular-08.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-Italic-05.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-Medium-06.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-MediumItalic-07.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-DemiBold-03.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-DemiBoldItalic-04.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-Bold-01.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-BoldItalic-02.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-Heavy-09.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-HeavyItalic-10.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-UltraLight-11.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirNextCondensed";
-  src: url("../fonts/AvenirNextCondensed-UltraLightItalic-12.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-
-/* ---------------- Lucida Grande ---------------- */
-@font-face {
-  font-family: "LucidaGrande";
-  src: url("../fonts/LucidaGrande-01.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "LucidaGrande";
-  src: url("../fonts/LucidaGrande-Bold-02.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* ---------------- Lucida Grande UI ---------------- */
-@font-face {
-  font-family: "LucidaGrandeUI";
-  src: url("../fonts/.LucidaGrandeUI-03.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "LucidaGrandeUI";
-  src: url("../fonts/.LucidaGrandeUI-Bold-04.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
 
 
-@font-face {
-  font-family: "IMFellFrenchCanon";
-  src: url("../fonts/IMFellFrenchCanon-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "IMFellFrenchCanon";
-  src: url("../fonts/IMFellFrenchCanon-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
+

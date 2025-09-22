@@ -10,28 +10,31 @@
     }
     .main {
         min-height: 600px;
-        padding-top: 90px;
-        background-position: 50% 0%;
+        padding-top: 487px;
+        height: auto;
         justify-content: flex-start;
-        background-size: 1245px auto;
+        background-color: #0a0a0a;
+        background-image: url(../img/main_mob.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
     }
-    .main::after {
-        position: absolute;
-        display: block;
-        content: " ";
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 120px;
-        z-index: -1;
-        background-image: linear-gradient(to bottom, rgba(30, 30, 30, 0), rgba(30, 30, 30, 1));
+    @supports (background-image: url('../img/main_mob.webp')) {
+        .main {
+            background-image: url('../img/main_mob.webp');
+        }
+    }
+    @supports (background-image: url('../img/main_mob.avif')) {
+        .main {
+            background-image: url('../img/main_mob.avif');
+        }
     }
     .main__content {
         display: flex;
         flex-direction: column;
         flex: 1;
-        padding: 0 15px;
-        padding-bottom: 100px;
+        padding: 15px;
+        padding-top: 0;
     }
     .main__schedule {
         margin: auto 0;
@@ -40,16 +43,20 @@
     .main__name {
         font-size: 17px;
         margin-bottom: 0;
-        letter-spacing: 6px;
+        letter-spacing: 8px;
+    }
+    .main__logo {
+        margin: 0 -26px;
     }
     .main__logo img {
-        width: 320px;
+        width: 100%;
+        max-width: 500px;
         margin: 0 auto;
         margin-bottom: -10px;
     }
     .menu__links {
-        font-size: 13px;
-        letter-spacing: 1px;
+        font-size: 2.7vw;
+        letter-spacing: 1vw;
         margin-top: 0;
     }
     .menu__links li::after {
@@ -64,10 +71,10 @@
         line-height: 18px;
     }
     .item-schedule__title {
-        font-size: 16px;
+        font-size: 15px;
     }
     .item-schedule__description {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
     }
     .list-schedule {
@@ -77,7 +84,7 @@
         break-inside: avoid;
     }
     .main__about {
-        margin-bottom: 130px;
+        margin-bottom: 38px;
         width: 100%;
     }
     .link-page {
@@ -85,6 +92,7 @@
     }
     .main__buy {
         padding-top: 20px;
+        display: none;
     }
 
     .menu {
@@ -92,6 +100,9 @@
         padding-bottom: 10px;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
         bottom: 0;
+    }
+    .menu::before {
+        display: none;
     }
     .menu__list {
         font-size: 14px;
@@ -105,29 +116,17 @@
         right: 20px;
     }
     .link-main {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 3px;
     }
     .btn-music {
-        width: 23px;
-        height: 35px;
-    }
-    .main::before {
-        position: absolute;
-        display: block;
-        content: " ";
-        background: rgba(34, 34, 34, 0.5);
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        pointer-events: none;
+        width: 20px;
+        height: 30px;
     }
 
     .premiere__title {
-        font-size: 26px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-bottom: 30px;
     }
 
 
@@ -154,12 +153,33 @@
 
     .biography {
         padding: 120px 20px;
+        padding-top: 370px;
         height: auto;
+        background-color: #060606;
+        background-image: url(../img/biography_mob.jpg);
+        background-size: 100% auto;
+        background-position: center top;
+    }
+    @supports (background-image: url('../img/biography_mob.webp')) {
+        .biography {
+            background-image: url('../img/biography_mob.webp');
+        }
+    }
+    @supports (background-image: url('../img/biography_mob.avif')) {
+        .biography {
+            background-image: url('../img/biography_mob.avif');
+        }
+    }
+    .biography::before {
+        display: none;
+    }
+    .biography .hero__title {
+        writing-mode: sideways-lr;
     }
     .biography__quote {
-        font-size: 17px;
+        font-size: 16px;
         margin-bottom: 60px;
-        text-align: left;
+        text-align: center;
         max-width: 100%;
         width: 100%;
     }
@@ -332,6 +352,7 @@
         font-size: 15px;
     }
 }
+
 
 @media (hover: hover) {
     .menu__links a:hover,

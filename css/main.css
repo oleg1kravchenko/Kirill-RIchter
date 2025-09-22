@@ -33,6 +33,7 @@ html {
 body {
 	color: #fff;
 	font-family: "AvenirNext";
+	font-weight: 500;
 	font-size: 0.63vw;
 	overflow-x: hidden;
 	margin: 0;
@@ -150,7 +151,6 @@ form {
 	margin-bottom: 0.52vw;
 	line-height: 1.2;
 	letter-spacing: 0.97vw;
-	font-family: "LucidaGrande";
 }
 .main__logo img {
 	width: 38.97vw;
@@ -179,9 +179,9 @@ form {
 	display: none;
 }
 .item-schedule {
-	margin-bottom: 1vw;
+	margin-bottom: 0.7vw;
 	text-align: center;
-	font-family: "CocoGothicSC";
+
 }
 .link-page,
 .item-schedule__title {
@@ -191,12 +191,13 @@ form {
 .link-page,
 .item-schedule__title strong {
 	font-weight: 700;
+	font-family: "CocoGothicSC";
 	font-style: italic;
 }
 .item-schedule__description {
 	font-size: 1vw;
 	line-height: 1.53vw;
-	font-weight: 300;
+	font-variant: small-caps;
 	font-style: italic;
 }
 .link-page {
@@ -205,16 +206,29 @@ form {
 	font-family: "CocoGothicSC";
 }
 .main__buy {
-	padding-top: 1.4vw;
+	padding-top: 1vw;
 	text-align: center;
 }
 
 .menu {
-	bottom: 1.04vw;
+	padding-bottom: 1.04vw;
+	bottom: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	z-index: 100;
 	position: fixed;
+}
+.menu::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	bottom: 0;
+	top: -3vw;
+	width: 100%;
+	left: 0;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+	pointer-events: none;
+	z-index: -1;
 }
 .menu__list {
 	font-size: 0.83vw;
@@ -242,7 +256,7 @@ form {
 	align-items: center;
 }
 .link-main {
-	font-size: 24px;
+	font-size: 0.83vw;
 	letter-spacing: 0.28vw;
 	color: #fff;
 	font-style: italic;
@@ -313,7 +327,6 @@ form {
 .tickets__item {
 	font-size: 1.46vw;
 	line-height: 2.4;
-	font-family: "CocoGothicSC";
 	color: #fff;
 	border-bottom: 0.07vw #fff solid;
 }
@@ -322,8 +335,22 @@ form {
 	font-style: italic;
 }
 .tickets__item span {
-	font-weight: 300;
 	font-style: italic;
+}
+.tickets__item .tickets__date {
+	font-weight: 500;
+	font-style: normal;
+}
+.tickets__item .tickets__date::after,
+.tickets__item .tickets__date::before {
+	content: "/";
+	margin: 0 0.87vw;
+	font-family: "CocoGothicSC";
+	font-weight: 700;
+	font-style: italic;
+}
+.tickets__date + span {
+	font-variant: small-caps;
 }
 .hero__title {
 	font-size: 4vw;
@@ -363,7 +390,7 @@ form {
 	margin-left: auto;
 	text-align: right;
 	line-height: 1.2;
-	font-family: "IMFellFrenchCanon";
+	font-weight: 100;
 	font-style: italic;
 }
 .biography__column:nth-child(1) {
@@ -398,6 +425,16 @@ form {
 
 .contacts {
 	align-items: center;
+}
+@supports (background-image: url('../img/contacts.webp')) {
+  .contacts {
+    background-image: url('../img/contacts.webp');
+  }
+}
+@supports (background-image: url('../img/contacts.avif')) {
+  .contacts {
+    background-image: url('../img/contacts.avif');
+  }
 }
 .contacts__content {
 	width: 25.79vw;
@@ -468,6 +505,10 @@ form {
 	font-style: italic;
 	line-height: 1.2;
 	letter-spacing: 0.33vw;
+}
+.premiere__title span {
+	font-weight: 100;
+	display: block;
 }
 
 .gallery {
@@ -681,4 +722,7 @@ form {
 .descr-thanks {
     font-size: 1.4vw;
     text-align: center;
+}
+.fancybox-is-open .fancybox-bg {
+    opacity: .6;
 }
