@@ -18,7 +18,7 @@
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 100% auto;
-    }
+    } 
     @supports (background-image: url('../img/main_mob.webp')) {
         .main {
             background-image: url('../img/main_mob.webp');
@@ -159,7 +159,7 @@
     }
 
     .biography {
-        padding: 120px 20px;
+        padding: 80px 20px;
         padding-top: 386px;
         height: auto;
         background-color: #060606;
